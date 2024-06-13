@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            font-size: 25px; /* Adjust font size as needed */
+            width: 50%; /* Adjust width as needed */
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid rgb(253, 168, 209); /* Light pink border */
+        }
+
+        footer {
+            width: 100%;
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+            font-size: 30px;
+            color: #FDA8D1;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-image: url("d4tajim-4f268e9a-ed94-4eea-9977-0d77f69e27f5-2.png"); /* Set your image path */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the image */
+            background-color: rgb(255, 255, 255);
+            transition: background-color 0.5s, filter 0.5s;
+            
+        }
+
+        body:hover {
+            background-color: rgb(0, 0, 0);
+            filter: grayscale(75%);
+        }
+
+        .fashionbar {
+            background: rgb(253, 168, 209);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fashionlinks {
+            display: flex;
+            align-items: center;
+        }
+
+        .fashionlinks ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        .fashionlinks li {
+            margin-right: 20px;
+        }
+
+        .fashionlinks li a {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .cta {
+            margin-left: auto;
+        }
+
+        .cta button {
+            background-color: rgb(253, 168, 209);
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .cta button a {
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .gallery-heading {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 40px; /* Set height to match the font size */
+            line-height: 40px; /* Center text vertically */
+            font-size: 30px;
+            color: rgb(253, 168, 209);
+            white-space: nowrap;
+        }
+
+        .gallery-heading .content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left-right 10s linear infinite;
+        }
+
+        .gallery-heading .content span {
+            margin-right: 50px; /* Space between repetitions */
+        }
+
+        @keyframes scroll-left-right {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-80%);
+            }
+        }
+        .pink-box {
+            background-color: rgb(253, 168, 209);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            font-size: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .paragraph-box {
+            background-color: rgba(0, 0, 0, 0.468);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 25px;
+            color: rgb(253, 168, 209);
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid rgb(253, 168, 209); /* Light pink border */
+        }
+
+        .paragraph-box-skinny {
+            background-color: rgba(0, 0, 0, 0.592);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 25px;
+            color: rgb(253, 168, 209);
+            width: 60%; /* Skinnier width */
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid rgb(253, 168, 209); /* Light pink border */
+        }
+
+        .why-pink-box {
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            font-size: 45px; /* Adjust font size as needed */
+            width: 70%; /* Adjust width as needed */
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid rgb(253, 168, 209); /* Light pink border */
+        }
+        .paragraph-box-boom {
+            background-color: rgba(0, 0, 0, 0.486);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 25px;
+            color: rgb(253, 168, 209);
+            width: 60%; /* Skinnier width */
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid rgb(253, 168, 209); /* Light pink border */
+        }
+        .bratz-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .bratz-button {
+            width: 64px;
+            height: 64px;
+            background: url('pixel-heart-png-gy093kucz8zfjrbp.jpg.png') no-repeat center;
+            background-size: contain;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .bratz-button:hover {
+            transform: scale(1.1);
+        }
+
+        .bratz-images img {
+            display: none;
+            max-width: 200px;
+            margin-top: 20px;
+            border: 5px solid rgb(253, 168, 209); /* Light pink border */
+        }
+
+ 
+    </style>
+</head>
+<body>
+
+        <div class="fashionbar">
+            <nav class="fashionlinks">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="where.html">WHERE</a></li>
+                    <li><a href="why.html">WHY</a></li>
+                    <li><a href="CF24.html">CF2024</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="contact.html"><button>CONTACT</button></a>
+        </div>
+
+    <main>
+        <div class="gallery-container">
+            <h3 class="gallery-heading">
+                <div class="content">
+                    <span>WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY?</span>
+                    <span>WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY? WHY?</span>
+
+                </div>
+            </h3>
+        </div>
+
+        <div class="why-pink-box">
+            <p>WHY SHOULD YOU GET INTO FASHION?</p>
+        </div>
+
+        <!-- Existing content -->
+        <div class="paragraph-box">
+            <p>Fashion offers a unique way to express yourself, to reflect your personality, and to connect with others. It can be a source of creativity, confidence, and even career opportunities.</p>
+        </div>
+
+        <div class="paragraph-box-skinny">
+            <p>From street style to haute couture, fashion is a diverse and dynamic field that touches all aspects of life.
+            </p>
+            <P>FASHION can allow your exterior to speak to world rather than your voice. It communicates your identity and is one of the most powerful tools for self-expression.
+
+                FASHION impacts how we perceive each other and can either help us or delay us from connecting with like-minded people.</P>
+        </div>
+        <div class="paragraph-box-boom">
+            <p> In that case… TODAY IS THE DAY YOU DISPLAY YOUR SENSE OF FASHION & STYLE IN THE WAY YOU WANT TO BE SEEN. LET IT SPEAK FOR YOU. LET IT BRING OPPORTUNITIES TO CONNECT WITH OTHERS AND EXPRESS YOUR IDENTITY!</p>
+        </div>
+
+        <div class="bratz-section">
+            <header>
+                <h1>WHICH BRATZ ARE YOU?</h1>
+            </header>
+            <button class="bratz-button" onclick="toggleBratzImages()"></button>
+            <div class="bratz-images">
+                <img id="bratzImage1" src="messybratz.jpg" alt="Messy Bratz Image">
+                <img id="bratzImage2" src="smokebratz.jpg" alt="Smoke Bratz Image">
+                <img id="bratzImage3" src="STFUbratz.jpg" alt="STFU Bratz Image">
+                <img id="bratzImage3" src="spiritualbratz.jpg" alt="Spiritual Bratz Image">
+                <img id="bratzImage3" src="BOOK BRATZ.jpg" alt="BOOK Bratz Image">
+                <img id="bratzImage3" src="crybratz.jpg" alt="cry Bratz Image">
+                <img id="bratzImage3" src="scarybratz.jpg" alt="scary Bratz Image">
+                <img id="bratzImage3" src="girlibratz.jpg" alt="girli Bratz Image">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <audio id="backgroundMusic" autoplay loop>
+            <source src="Fred again.. feat. The Blessed Madonna - Marea (Weve Lost Dancing) (Official Audio).mp3" type="audio/mpeg">
+        </audio>
+        <p>&copy; 2024 CHI CHI. All RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        let currentImageIndex = 0;
+        const bratzImages = document.querySelectorAll('.bratz-images img');
+
+        function toggleBratzImages() {
+            // Hide all images first
+            bratzImages.forEach(image => {
+                image.style.display = 'none';
+            });
+
+            // Show the current image
+            bratzImages[currentImageIndex].style.display = 'block';
+
+            // Move to the next image
+            currentImageIndex = (currentImageIndex + 1) % bratzImages.length;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon copy.jpg" type="image/jpeg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        footer {
+            width: 100%;
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+            font-size: 30px;
+            color: #FDA8D1;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #ffffff;
+            transition: background-color 0.5s, filter 0.5s;
+        }
+
+        body:hover {
+            background-color: #000000;
+            filter: grayscale(75%);
+        }
+
+        .fashionbar {
+            background-color: #FDA8D1;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fashionlinks ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .fashionlinks li {
+            margin-right: 20px;
+        }
+
+        .fashionlinks li a {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .fashion-icon {
+    height: 40px; /* Adjust as needed */
+    margin-right: 20px; /* Space between icon and navigation links */
+    border: 3px solid #000000;
+}
+
+        .cta button {
+            background-color: #FDA8D1;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .cta button a {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .gallery-heading {
+            width: 100%;
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+            font-size: 30px;
+            color: #FDA8D1;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        .gallery-heading .content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left-right 10s linear infinite;
+        }
+
+        .gallery-heading .content span {
+            margin-right: 50px;
+        }
+
+        @keyframes scroll-left-right {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .name-tag {
+            background-color: #FDA8D1;
+            color: #ffffff;
+            padding: 5px 0px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            font-size: 30px;
+            text-align: center;
+            width: 90%;
+        }
+
+        .box a {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+        .box a:hover {
+    transform: scale(1.1) translateY(-10px);
+    z-index: 1; /* Ensures hovered image is on top */
+}
+
+
+        .box img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px; /* Optional: rounded corners */
+        }
+
+        .paragraph-box {
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px auto;
+            font-size: 25px;
+            padding: 10px;
+            width: 50%;
+            border: 5px solid #FFB6C1;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .box img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .name-tag {
+                font-size: 12px;
+                width: 80%;
+            }
+
+            .paragraph-box {
+                width: 80%;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 200px) {
+            .box img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .name-tag {
+                font-size: 10px;
+                width: 90%;
+            }
+
+            .paragraph-box {
+                width: 90%;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="fashionbar">
+            <img src="favicon copy.jpg" alt="Fashion Icon" class="fashion-icon">
+            <nav class="fashionlinks">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="where.html">WHERE</a></li>
+                    <li><a href="why.html">WHY</a></li>
+                    <li><a href="CF24.html">CF2024</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <button><a href="contact.html">CONTACT</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <h3 class="gallery-heading">
+                <div class="content">
+                    <span>CODING FUNDAMENTALS 2024 CODING FUNDAMENTALS 2024 CODING FUNDAMENTALS 2024 CODING FUNDAMENTALS 2024 CODING FUNDAMENTALS 2024 CODING FUNDAMENTALS 2024</span>
+                    <span>CODING FUNDAMENTALS 2024 CODING FUNDAMENTALS 2024 CODING FUNDAMENTALS 2024 CODING FUNDAMENTALS 2024 CODING FUNDAMENTALS 2024 CODING FUNDAMENTALS 2024</span>
+                </div>
+            </h3>
+        </div>
+        <div class="paragraph-box">
+            <p>EXPLORE THE WEBSITES OF OTHER DESIGNERS</p>
+        </div>
+        <section class="container">
+            <div class="box">
+                <!-- Example image containers, replace with actual images and names -->
+                <div class="image-container">
+                    <div class="name-tag">RAMONA</div>
+                    <a href="https://ramonabeepbop.github.io/send-help"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 1"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">LIV</div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 2"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">MILLA</div>
+                    <a href="https://millapyne.github.io/final-milla/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 3"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">ALYSSA</div>
+                    <a href="https://rrussianfairyy.github.io/Flavour-Files/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 4"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">LENA</div>
+                    <a href="https://lenacrafter.github.io/Dev-1/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 5"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">LIZZIE</div>
+                    <a href="https://bigfatfish8.github.io/bigfatrepo/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 6"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">TAI</div>
+                    <a href="https://t4ibrownnn.github.io/Meow-3/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 7"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">GRACE</div>
+                    <a href="https://gracekinii.github.io/Graces-site---How-to-gain-film-knowledge/Feature%203.html"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 8"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">SETA</div>
+                    <a href="https://setamushroom.github.io/Xiangyuasha-Silk/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 9"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">NATE</div>
+                    <a href="https://nateskinnerr.github.io/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 10"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">FENN</div>
+                    <a href="https://rainbowsluggg.github.io/coolerest"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 11"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">LEO</div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 12"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">MARK</div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 13"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag">CHRISTIANA</div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 14"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag"></div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 15"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag"></div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 16"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag"></div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 17"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag"></div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 18"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag"></div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 19"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag"></div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 20"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag"></div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 21"></a>
+                </div>
+                <div class="image-container">
+                    <div class="name-tag"></div>
+                    <a href="https://l1vb.github.io/RepoName/"><img src="pixel-heart-png-gy093kucz8zfjrbp.jpg.png" alt="Fashion Image 22"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <audio controls autoplay loop>
+        <source src="Fred again.. feat. The Blessed Madonna - Marea (Weve Lost Dancing) (Official Audio).mp3" type="audio/mpeg">
+    </audio>
+    <footer>
+        <p>&copy; 2024 CHI CHI. All RIGHTS RESERVED.</p>
+    </footer>
+</body>
+
+</html>
+

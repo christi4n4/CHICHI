@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        footer {
+            width: 100%;
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+            font-size: 30px;
+            color: #FDA8D1;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: rgb(255, 255, 255);
+            transition: background-color 0.5s, filter 0.5s;
+        }
+
+        body:hover {
+            background-color: rgb(0, 0, 0);
+            filter: grayscale(75%);
+        }
+
+        .fashionbar {
+            background: rgb(253, 168, 209);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fashionlinks {
+            display: flex;
+            align-items: center;
+        }
+
+        .fashionlinks ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        .fashionlinks li {
+            margin-right: 20px;
+        }
+
+        .fashionlinks li a {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .cta {
+            margin-left: auto;
+        }
+
+        .cta button {
+            background-color: rgb(253, 168, 209);
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .cta button a {
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .gallery-heading {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 40px; /* Set height to match the font size */
+            line-height: 40px; /* Center text vertically */
+            font-size: 30px;
+            color: rgb(253, 168, 209);
+            white-space: nowrap;
+        }
+
+        .gallery-heading .content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left-right 10s linear infinite;
+        }
+
+        .gallery-heading .content span {
+            margin-right: 50px; /* Space between repetitions */
+        }
+
+        @keyframes scroll-left-right {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-80%);
+            }
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .box img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid rgb(255, 182, 193); /* Light pink border */
+            border-radius: 10px; /* Optional: rounded corners */
+        }
+
+        .paragraph-box {
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid rgb(255, 182, 193); /* Light pink border */
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="fashionbar">
+            <nav class="fashionlinks">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="where.html">WHERE</a></li>
+                    <li><a href="why.html">WHY</a></li>
+                    <li><a href="CF24.html">CF2024</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="contact.html"><button>CONTACT</button></a>
+        </div>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <h3 class="gallery-heading">
+                <div class="content">
+                    <span>FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY</span>
+                    <span>FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY FASHION GALLERY</span>
+                </div>
+
+            </h3>
+        </div>
+        <div class="paragraph-box">
+            <p>DEFINITION: “FASHION is a DYNAMIC FORCE that IGNITES OUR SENSE OF SELF-WORTH, ENHANCES our CREATIVITY, and REFLECTS our INNER BEAUTY”. 
+            </p> 
+        </div>
+        
+
+        <div class="container">
+
+            <div class="box">
+        <div class="dream">
+            <img src="PICTUREFOUR.png" alt="one"
+            style="width: 600px;height: 400px;">
+            <img src="PICTURETHREE.png" alt="two"
+            style="width: 600px;height: 400px;">
+            <img src="PICTURETWO.png" alt="three"
+            style="width: 600px;height: 400px;">
+            <img src="PICTUREONE.png" alt="four"
+            style="width: 600px;height: 400px;">
+            <img src="PICTURESIX.png" alt="five"
+            style="width: 600px;height: 400px;">
+            <img src="PICTUREFIVE.png" alt="six"
+            style="width: 600px;height: 400px;">
+        
+    </div>
+    <audio controls autoplay loop>
+        <source src="Fred again.. feat. The Blessed Madonna - Marea (Weve Lost Dancing) (Official Audio).mp3" type="audio/mpeg">
+    </audio>
+    <footer>
+        <p>&copy; 2024 CHI CHI. All RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</header>
+</html>
+
+
+
